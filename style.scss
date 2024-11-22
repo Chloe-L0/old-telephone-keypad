@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: #222;
+  font-family: "Josefin Sans", Arial, sans-serif;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  #btn-container {
+    position: relative;
+    background: #878787;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 240px;
+    height: fit-content;
+    padding: 20px;
+    align-content: center;
+    box-shadow: 10px 10px 10px 3px #181818;
+
+    li {
+      flex-shrink: 0;
+      list-style-type: none;
+      width: 50px;
+      aspect-ratio: 1;
+      background: #ccc;
+      background: radial-gradient(circle, #ccc 0%, #ccc 50%, #878787 100%);
+      border-radius: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 2px 3px 0px 2px #383838;
+      transition: 0.1s;
+      cursor: pointer;
+
+      &:active {
+        scale: 0.98;
+        translate: 0 1px;
+      }
+
+      p {
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: 15px;
+        font-weight: 600;
+
+        span {
+          display: block;
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
